@@ -68,7 +68,6 @@ public class ExpressBuilder extends RandomBuilder {
                 System.out.println("2. What is your maximum budget in USD before shipping and taxes? " +
                         "Enter a number from 500 to 5000.");
                 System.out.println();
-
                 double userBudget = expressInput.nextDouble();
                 ExpressBuilder.setUserBudget(userBudget);
                 while (userBudget > 5000 || userBudget < 500) {

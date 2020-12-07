@@ -41,7 +41,7 @@ public class MainMenu {
                 case 4: Glossary.Glossaryinfo();break;
                 case 5: System.out.println("Thanks for using this program! ☺");break;
                 default: System.out.println("Please enter a valid option from the menu.");
-                         System.out.println();
+                System.out.println();
             }
         }
         while (mainMenu != 5);
