@@ -121,8 +121,11 @@ public class ExpressBuilder extends RandomBuilder {
     }
 
     public static void ExpressPC_print() {
-        PC_Types.PCtaker select = new PC_Types.PCtaker();
-        select.PC_Build();
+        PC_Types.PCtaker.ExpressPC_Build();
+    }
+
+    public  static void RandomPC_print(){
+        PC_Types.PCtaker.RandomPC_Build();
     }
 
 }

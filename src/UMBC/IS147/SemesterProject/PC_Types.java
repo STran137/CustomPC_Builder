@@ -276,7 +276,7 @@ interface PC_Types {
             }
         }
 
-        public void PC_Build(){
+        public static void ExpressPC_Build(){
             PCtaker Option = new PCtaker();
             Option.TakeCPU();
             Option.TakeMobo();
@@ -289,6 +289,12 @@ interface PC_Types {
             Option.TakeCASE();
             Option.TakeOS();
             Option.printTable();
+        }
+
+        public static void RandomPC_Build(){
+            PCtaker Option = new PCtaker();
+            ExpressPC_Build();
+            Option.printRandomTable();
         }
 
         public void printTable () {
@@ -308,31 +314,27 @@ interface PC_Types {
             System.out.printf("%-25s%68.2f%n", "Base Total", calcTotals());
             System.out.printf("%-5s%-3.2f%-2s%82.2f%n", "Tax (", Tax, "%)", taxedTotal);
             System.out.printf("%-25s%68.2f%n", "Total", finalTotal);
+        }
 
-            // Print section for RandomBuilder only
-            if (RandomBuilder.getRandomStartKey() == 1){
+        public  void printRandomTable (){
+            if (MainMenu.getMainMenu() == 8){
                 System.out.println("--------------------");
                 System.out.println("Random Build Information");
                 System.out.printf("%-10s%-1d%n", "PC Type: ", ExpressBuilder.getUserType());
                 System.out.printf("%-10s%-2.2f%n", "Budget: ", ExpressBuilder.getUserBudget());
             } else {
-            System.out.println("-------------------------------------------------------------------------------------------------");
+                System.out.println("-------------------------------------------------------------------------------------------------");
             }
             System.out.println();
         }
 
         public double calcTotals (){
-
             double[] grabPrice = {CPUcost, MOBOcost, FANcost, RAMcost, GPUcost, HDDcost, SSDcost, PSUcost, CASEcost, OScost};
             double sum = 0;
             for (int i = 0; i < grabPrice.length; i++)
                 sum +=grabPrice[i];
             return sum;
-
-
         }
-
-
     }
 
 

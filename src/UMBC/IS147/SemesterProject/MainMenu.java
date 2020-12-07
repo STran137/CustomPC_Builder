@@ -11,7 +11,8 @@ import java.util.Scanner;
 public class MainMenu {
 
     public static int mainMenu;
-    public static int getMainMenu (){
+
+    public static int getMainMenu() {
         return mainMenu;
     }
 
@@ -21,7 +22,7 @@ public class MainMenu {
         printMenu();
     }
 
-    public static void printMenu(){
+    public static void printMenu() {
         Scanner mainInput = new Scanner(System.in);
 
         do {
@@ -35,16 +36,26 @@ public class MainMenu {
 
             mainMenu = mainInput.nextInt();
             switch (mainMenu) {
-                case 1: ExpressPC_Menu();break;
-                case 2: System.out.println("Custom");break;
-                case 3: RandomPC_Menu();break;
-                case 4: Glossary.Glossaryinfo();break;
-                case 5: System.out.println("Thanks for using this program! ☺");break;
-                default: System.out.println("Please enter a valid option from the menu.");
-                System.out.println();
+                case 1:
+                    ExpressPC_Menu();
+                    break;
+                case 2:
+                    System.out.println("Custom");
+                    break;
+                case 3:
+                    RandomPC_Menu();
+                    break;
+                case 4:
+                    Glossary.Glossaryinfo();
+                    break;
+                case 5:
+                    System.out.println("Thanks for using this program! ☺");
+                    break;
+                default:
+                    System.out.println("Please enter a valid option from the menu.");
+                    System.out.println();
             }
-        }
-        while (mainMenu != 5);
+        } while (mainMenu != 5);
     }
 
     public static void printBanner() {
@@ -56,38 +67,32 @@ public class MainMenu {
         System.out.println();
     }
 
-    public static void currentDateFormat (){
+    public static void currentDateFormat() {
         Date currentDate = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
         System.out.println("Today is: " + dateFormat.format(currentDate));
     }
 
-   public static void ExpressPC_Menu(){
+    public static void ExpressPC_Menu() {
 
-       ExpressBuilder.ExpressPC_type();
-       ExpressBuilder.ExpressPC_budget();
-       ExpressBuilder.ExpressPC_windows();
-       ExpressBuilder.ExpressPC_tax();
-       ExpressBuilder.ExpressPC_print();}
-
-    public static void RandomPC_Menu(){
-
-        RandomBuilder.randomBuildStart();
         ExpressBuilder.ExpressPC_type();
         ExpressBuilder.ExpressPC_budget();
         ExpressBuilder.ExpressPC_windows();
         ExpressBuilder.ExpressPC_tax();
-        ExpressBuilder.ExpressPC_print();}
+        ExpressBuilder.ExpressPC_print();
+    }
 
+    public static void RandomPC_Menu() {
 
-
-
-
-
-
+        RandomBuilder.randomBuildStart();
+        ExpressPC_Menu();
+        ExpressBuilder.RandomPC_print();
+    }
 
 
 }
+
+
 
 
 
