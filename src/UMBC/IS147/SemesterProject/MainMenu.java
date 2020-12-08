@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class MainMenu {
 
-    public static int mainMenu;
+    private static int mainMenu;
 
     public static int getMainMenu() {
         return mainMenu;
@@ -74,7 +74,6 @@ public class MainMenu {
     }
 
     public static void ExpressPC_Menu() {
-
         ExpressBuilder.ExpressPC_type();
         ExpressBuilder.ExpressPC_budget();
         ExpressBuilder.ExpressPC_windows();
@@ -83,13 +82,9 @@ public class MainMenu {
     }
 
     public static void RandomPC_Menu() {
-
         RandomBuilder.randomBuildStart();
         ExpressPC_Menu();
-        ExpressBuilder.RandomPC_print();
     }
-
-
 }
 
 

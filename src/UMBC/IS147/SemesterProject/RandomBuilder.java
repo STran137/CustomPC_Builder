@@ -8,16 +8,13 @@ class RandomBuilder {
     public static int getRandomStartKey() { return randomStartKey; }
     public static void setRandomStartKey(int randomStartNum) {randomStartKey = randomStartNum; }
 
-    int min,max;
-
     int randomWithRange(int min, int max) {
-        int range = (this.max - this.min) + 1;
+        int range = (max - min) + 1;
         return (int) (Math.random() * range) + min;
     }
 
     double randomWithRange(double min, double max) {
-        double range = (this.max - this.min) + 1;
-
+        double range = (max - min) + 1;
         return (Math.random() * range) + min;
     }
 

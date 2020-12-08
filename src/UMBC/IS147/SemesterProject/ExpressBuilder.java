@@ -23,8 +23,7 @@ public class ExpressBuilder extends RandomBuilder {
     public static void ExpressPC_type() {
         Scanner expressInput = new Scanner(System.in);
         RandomBuilder give = new RandomBuilder();
-
-
+        
         if (MainMenu.getMainMenu() == 3) {
             int userType = give.randomWithRange(2, 3);
             ExpressBuilder.setUserType(userType);
@@ -68,6 +67,7 @@ public class ExpressBuilder extends RandomBuilder {
                 System.out.println("2. What is your maximum budget in USD before shipping and taxes? " +
                         "Enter a number from 500 to 5000.");
                 System.out.println();
+
                 double userBudget = expressInput.nextDouble();
                 ExpressBuilder.setUserBudget(userBudget);
                 while (userBudget > 5000 || userBudget < 500) {
@@ -121,11 +121,8 @@ public class ExpressBuilder extends RandomBuilder {
     }
 
     public static void ExpressPC_print() {
-        PC_Types.PCtaker.ExpressPC_Build();
-    }
-
-    public  static void RandomPC_print(){
-        PC_Types.PCtaker.RandomPC_Build();
+        PC_Types.PCtaker select = new PC_Types.PCtaker();
+        select.PC_Build();
     }
 
 }

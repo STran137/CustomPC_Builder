@@ -276,7 +276,7 @@ interface PC_Types {
             }
         }
 
-        public static void ExpressPC_Build(){
+        public void PC_Build(){
             PCtaker Option = new PCtaker();
             Option.TakeCPU();
             Option.TakeMobo();
@@ -291,12 +291,6 @@ interface PC_Types {
             Option.printTable();
         }
 
-        public static void RandomPC_Build(){
-            PCtaker Option = new PCtaker();
-            ExpressPC_Build();
-            Option.printRandomTable();
-        }
-
         public void printTable () {
             Scanner Input = new Scanner(System.in);
 
@@ -306,7 +300,7 @@ interface PC_Types {
             double taxedTotal = calcTotals() * Tax * 0.01;
             double finalTotal = calcTotals() + (calcTotals() * Tax * 0.01);
 
-            System.out.printf("%-25s%-40s%27s%n", "Part", "Selection", "[$]Price");
+            System.out.printf("%-25s%-40s%27s%n", "Part", "Selection", "Price");
             System.out.println("-------------------------------------------------------------------------------------------------");
             for (int i = 0; i < columnNames.length; i++)
                 System.out.printf("%-25s%-55s%13.2f%n", columnNames[i], userParts[i], grabPrice[i]);
@@ -314,16 +308,14 @@ interface PC_Types {
             System.out.printf("%-25s%68.2f%n", "Base Total", calcTotals());
             System.out.printf("%-5s%-3.2f%-2s%82.2f%n", "Tax (", Tax, "%)", taxedTotal);
             System.out.printf("%-25s%68.2f%n", "Total", finalTotal);
-        }
 
-        public  void printRandomTable (){
-            if (MainMenu.getMainMenu() == 8){
+            if (MainMenu.getMainMenu() == 3){
                 System.out.println("--------------------");
                 System.out.println("Random Build Information");
                 System.out.printf("%-10s%-1d%n", "PC Type: ", ExpressBuilder.getUserType());
                 System.out.printf("%-10s%-2.2f%n", "Budget: ", ExpressBuilder.getUserBudget());
             } else {
-                System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println("-------------------------------------------------------------------------------------------------");
             }
             System.out.println();
         }
