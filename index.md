@@ -16,3 +16,11 @@ Click on the YouTube video to see a live demo of the application!
 <iframe width="415" height="233" src="https://www.youtube.com/embed/p80NrweHnEo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
+
+## Future Improvements
+
+* Finish Custom PC Builder Class
+* Finish Glossary Class
+* Add more PC parts such as peripherals, monitors, fans, and other accessories
+* Develop a way to dynamically retrieve prices from retailers such as Amazon, BestBuy, and NewEgg (SQL)
+*Ability to create a build based on a specific game such as Fortnite, CS:GO, and COD: Warzone
