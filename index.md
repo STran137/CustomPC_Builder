@@ -13,7 +13,7 @@ Click on the YouTube video to see a live demo of the application!
 
 <div class="embed-responsive embed-responsive-16by9">
 
-<iframe width="410" height="231" src="https://youtu.be/wfpKIit3kJc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="410" height="231" src="https://www.youtube.com/embed/wfpKIit3kJc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 
