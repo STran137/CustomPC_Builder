@@ -23,4 +23,4 @@ Click on the YouTube video to see a live demo of the application!
 * Finish Glossary Class
 * Add more PC parts such as peripherals, monitors, fans, and other accessories
 * Develop a way to dynamically retrieve prices from retailers such as Amazon, BestBuy, and NewEgg (SQL)
-*Ability to create a build based on a specific game such as Fortnite, CS:GO, and COD: Warzone
+* Ability to create a build based on a specific game such as Fortnite, CS:GO, and COD: Warzone
