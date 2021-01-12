@@ -7,3 +7,12 @@ This is my biggest project so far in Java. It was a semester-long project for my
 I used KanbanFlow, a workflow management tool, to help organize and monitor my progress throughout the project pipeline. Although I worked individually in creating this application, I still found KanbanFlow to be a very useful way to keep myself in check despite it usually being used for group projects.
 
 ![Screenshot of Checklist Criteria](Checklist.png)
+
+## Live Demo
+Click on the YouTube video to see a live demo of the application!
+
+<div class="embed-responsive embed-responsive-16by9">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p80NrweHnEo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
