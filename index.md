@@ -1,7 +1,7 @@
 ---
 title: Custom PC Builder | Java
-description: A simple payroll calculator that I developed in Java to output gross pay and net pay based on user inputted values of hourly payrate and hours worked.
-image: CustomPCbuilder.png
+description: A Java program that generates a pre-determined list of computer parts in a ASCII table based on user budget, taxes, and preferences.
+image: CustomPCBuilder.png
 youtubeId: wfpKIit3kJc
 ---
 
